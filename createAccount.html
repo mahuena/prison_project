@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta class="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JIT App</title>
+
+    <!--link stylesheet and font awesome icon-->
+    <link rel="stylesheet" href="css/createAccount.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body>
+    <!--Main starts-->
+<div class="container">
+    <form action="" method="POST">
+        <div class="box-container">
+            <div class="column">
+                <label class="required">First name</label>
+                <div class="input-container">
+                    <input class="input-field1" type="text" name="usrnm">
+                </div>
+
+                <label class="required">Grade</label>
+                <div class="input-container">
+                    <input class="input-field1" type="text" name="grade">
+                </div>
+
+                <label class="required">Phone_number</label>
+                <div class="input-container">
+                    <i class="fa fa-phone icon"></i>
+                    <input type="#" placeholder="0xxxxxxxxxx" name="phone" class="input-field" id="dif">
+                </div>
+
+                <label class="required">Email</label>
+                <div class="input-container">
+                    <i class="fa fa-envelope icon"></i>
+                    <input type="email" name="email" class="input-field">
+                </div>
+            </div>
+
+            <div class="column">
+                <label class="required">Last name</label>
+                <div class="input-container">
+                    <input class="input-field1" type="text" name="name">
+                </div>
+
+                <label class="required">Departement</label>
+                <div class="input-container">
+                    <input class="input-field1" type="text" name="departement">
+                </div>
+
+                <label class="required">City</label>
+                <div class="input-container">
+                    <select name="selection" class="input-field1">
+                        <option value="city" selected="selected">Choose</option>
+                    </select>
+                </div>
+
+                <label class="required">Email_Password</label>
+                <div class="input-container">
+                    <i class="fa fa-lock icon"></i>
+                    <input type="password" placeholder="xxxxxxxxx" name="pass" class="input-field">
+                </div>
+            </div>
+            
+            <div class="column">
+                <label>Username</label>
+                <div class="input-container">
+                    <i class="fa fa-at icon"></i>
+                    <input type="text" name="username" class="input-field">
+                </div>
+
+                <label class="required">Birthday</label>
+                <div class="input-container">
+                    <input class="input-field1" type="date" name="birth">
+                </div>
+
+                <label class="required">Addresse</label>
+                <div class="input-container">
+                    <input class="input-field1" placeholder="" type="text" name="adress">
+                </div>
+
+                <label class="required">Officer_ID</label>
+                <div class="input-container">
+                    <input class="input-field1" type="text" name="ID">
+                </div>
+            </div>
+
+            <p>Your password must be 8-20 characters long, contain letters and numbers and must not contain spaces, special characters or emoji.</p>
+
+            <div class="pass">
+                <label class="required">Login_Password</label>
+                <div class="input-container">
+                    <i class="fa fa-lock icon"></i>
+                    <input class="input-field" type="password" placeholder=".........." id="myInput">
+                </div>
+
+                <div class="password">
+                    <input type="checkbox" onclick="myFunction()">
+                    <p> Show Password </p>
+                </div>
+
+                <label class="required">Confirmation</label>
+                <div class="input-container">
+                    <input class="input-field1" type="password" placeholder=".........." name="password">
+                </div>
+            </div>
+
+            <div style="margin-top: 40px;">
+            <input type="checkbox" id="agreement" required style="margin-left: 50px;"> <label for="agreement">Agree to <a href="#">term and conditions</a></label>
+            </div>
+            <button type="submit" class="login"> Submit form </button>
+        </div>
+    </form>
+
+
+</div>
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myInput");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+</script>
+</body>
+</html>

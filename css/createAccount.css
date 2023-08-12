@@ -1,0 +1,254 @@
+body{
+    background: #042e2e;
+}
+.container{
+    height: 64rem;
+    background: linear-gradient(to bottom, rgba(4, 30, 32, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+    width: 88%;
+    background-position: center;
+    background-repeat: no-repeat; 
+    margin: auto; margin-top: 70px; margin-bottom: 70px;
+    padding: 20px;
+  }
+  .column{
+    float: left;
+    width: 32%;
+    height: 30rem;
+    margin: 7px;
+  }
+.row:after{
+    clear: both;
+  }
+
+.required::after{
+    content: ' *';
+    color: red;
+}
+ .container .box-container .column label{
+    font-size: 19px;
+    color: #fff;
+    font-weight: normal;
+    display: block;
+    margin-bottom: 10px; margin-top: 25px;
+    margin-left: 40px;
+}
+.input-container{
+    width: 100%;
+    margin: auto;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    display: flex;
+}
+.icon {
+padding: 15px 10px 5px;
+background: #fff;
+min-width: 25px;
+text-align: center;
+vertical-align: auto;
+color: #111;
+border-radius: .5ch 0 0 .5ch;
+font-size: 25px;
+}
+.input-field{
+    width: 69%;
+    padding: 15px;
+    background: transparent;
+    border: 1px solid #808080;
+    border-radius: 0 .5ch .5ch 0;
+    color: #fff;
+    font-size: 20px;
+    outline: none;
+}
+.input-field1 {
+    width: 80%;
+    padding: 15px;
+    background: transparent;
+    border: 1px solid #808080;
+    border-radius: .5ch;
+    color: #fff;
+    font-size: 20px;
+    outline: none;
+}
+#dif::placeholder{
+    color: #111;
+}
+.box-container p{
+    font-size: 18px;
+    color: #fff;
+    margin-left: 40px;
+}
+.pass{
+    background: #fff;
+    margin: auto; margin-top: 60px;
+    border: 2px solid rgb(23, 126, 223);
+    padding: 0 10px;
+    width: 30%;
+    height: 14rem;
+    border-radius: 1.5ch;
+}
+
+.pass .input-field{
+    padding: 10px;
+    border-radius: 0 .5ch .5ch 0;
+    width: 55%;
+    background: #fff;
+    border-radius: 0 .5ch .5ch 0;
+    border: 1px solid linear-gradient(to bottom, rgba(7, 65, 40, 0.5) 0%, rgba(3, 104, 65, 0.5) 100%);
+    color: #111;
+    outline: none;
+    font-size: 20px;
+}
+.pass .input-field1{
+    padding: 10px;
+    width: 68%;
+    background: #fff;
+    border-radius: .5ch;
+    border: 1px solid linear-gradient(to bottom, rgba(7, 65, 40, 0.5) 0%, rgba(3, 104, 65, 0.5) 100%);
+    color: #111;
+    outline: none;
+    font-size: 20px;
+}
+ .pass label{
+    font-size: 19px;
+    margin: 5px;
+    color: #111;
+    display: block;
+    font-weight: bold;
+    padding: 2px;
+}
+.pass .input-container{
+    margin-left: 23px;
+}
+.pass .input-container .icon{
+background: #042e2e;
+padding: 10px;
+    }
+.password {
+    margin-left: 25px;
+}
+input[type=checkbox]{
+    height: 13px;
+   width: 13px;
+}
+ .password p{
+    display: inline-block;
+    font-size: 15px;
+    color: #111;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+label[for="agreement"]{
+    font-size: 18px;
+    color: #fff;
+}
+label[for="agreement"] a{
+    color: rgb(77, 77, 3);
+    font-size: 18px;
+    font-weight: bold;
+}
+.login{
+    background-color: rgb(23, 126, 223);
+    color: #eee;
+    padding: 15px 20px; 
+    margin: 75px 50px;
+    border: none;
+    border-radius:.5ch;
+    cursor: pointer;
+    width: auto;
+    font-size: 18px;
+    top: 45px;
+}
+ .login:hover {
+    opacity: 0.9;
+  }
+ 
+
+
+
+  @media (max-width:1100px){
+    .container{
+        height: 75rem;
+    }
+    .column{
+        width: 31%;
+        height: 38rem;
+    }
+    .container .box-container .column label{
+        font-size: 28px;
+        margin-left: 40px; margin-top: 30px; margin-bottom: 20px;
+    }
+    
+    } 
+ 
+@media(max-width:990px){
+    .container {
+        height: 240rem;
+    }.container p{
+    font-size: 25px;
+    }
+    .column{
+        width: 100%;
+        height: 57rem;
+    }
+    .container .box-container .column label{
+        font-size: 35px;
+        margin-top: 55px; margin-bottom: 25px;
+    }
+    .input-field{
+        font-size: 35px;
+        width: 69%;
+        padding: 30px;
+ }
+ .icon {
+    padding: 30px 30px 15px;
+    font-size: 35px;
+ }
+ .input-field1{
+    padding: 30px;
+    font-size: 35px;
+}
+.pass {
+    width: 80%;
+    height: 28rem;
+}
+.pass .input-container .icon {
+    padding: 30px 30px 15px;
+    font-size: 35px;
+}
+.pass label{
+    font-size: 34px;
+    margin: 20px;
+}
+.pass .input-field{
+    font-size: 35px;
+    width: 60%;
+    padding: 30px;
+}
+.pass .input-field1{
+width: 72%;
+padding: 30px;
+font-size: 35px;
+}
+input[type=checkbox]{
+    height: 20px;
+   width: 20px;
+}
+ .password p{
+    font-size: 20px;
+}
+label[for="agreement"]{
+    font-size: 25px;
+}
+label[for="agreement"] a{
+    font-size: 25px;
+}
+.login{
+    padding: 30px 40px; 
+    margin: 150px 50px;
+    font-size: 35px;
+}
+ }
+ 
+
+

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>My account</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!--Link style sheet-->
+    <link rel="stylesheet" href="css/Account.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+    <nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            
+            <h3 style="color: white; background: transparent; margin-left: 25px; font-size: 30px; border: none;">My_account</h3>
+    
+            <a href="#" class="different"><i class="fa fa-user-edit icon"></i> Change Status</a>
+            <a href="#" class="different"><i class="fa fa-user-edit" style="color:rgba(111, 154, 194, 0.541); float: left;"></i> Edit the profil photo</a>
+            <a href="#" class="different"><i class="fa fa-user-edit icon"></i> Edit your account</a>
+            <a href="#" class="different"> Show my information</a>
+            <a href="#" class="different"> Personal document</a> 
+            <a href="#" class="different"> Delete the account/Exit </a>
+            <a href="#" class="different"> Change Status</a>
+        </div>
+          
+        <img onclick="openNav()" src="images/user.png" alt="" style="float: left;">
+        
+        <h4 class="text-capitalize">ms @Jit connected</h4>
+        
+        <div class="search-icon">
+            <span class="fa fa-search"></span>
+         </div>
+         <div class="cancel-icon">
+            <span class="fa fa-times"></span>
+         </div>
+        <form action="#">
+            <input type="search" class="search-data" placeholder="Search" required>
+            <button type="submit" class="fa fa-search"></button>
+        </form>
+    </nav>
+</header>
+
+
+    <a href="#" class="notification"><span>Notifications</span><span class="badge">4</span></a>
+
+    <div id="mySidenav1" class="sidenav1">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+        <div class="dropdown-content" style="margin-top: 60px;">
+            <a href="prisoners_management.html">Prisoners_management</a>
+            <a href="#">Sentence calculator</a>
+            <a href="#">Staff_management</a>
+            <a href="#">Cells_management</a>
+            <a href="#">Others Services</a> 
+        </div>
+    </div>
+    <span class="openbtn" style="font-size:42px; cursor:pointer" onclick="openNav1()">&#9776;</span>
+    
+  
+
+     <div class="slider">
+        <div class="mySlides fade" style="text-align: center;">
+            <img src="" alt="">
+        </div>
+
+        <div class="mySlides fade" style="text-align: center;">
+            <img src="" alt="">
+        </div>
+
+        <div class="mySlides fade" style="text-align: center;">
+            <img src="" alt="">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)"> &#10094; </a>
+        <a class="next" onclick="plusSlides(1)"> &#10095; </a>
+     </div>
+
+     <div style="text-align: center;">
+         <span class="bar" onclick="currentSlide(1)"></span>
+         <span class="bar" onclick="currentSlide(2)"></span>
+         <span class="bar" onclick="currentSlide(3)"></span>
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/account.js"></script>
+
+
+    <footer>
+        <i class="fa fa-comments icon" style="float: left; color: white;"></i>
+        <i class="fa fa-home icon" style="color: rgba(255, 255, 255, 0.541);"></i>
+        <i class="fa fa-cog icon" style="float: right; color: rgba(255, 255, 255, 0.541);"></i>
+    </footer>
+</div>
+</body>
+</html>

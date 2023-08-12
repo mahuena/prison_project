@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prisoners_management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/prisoners.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                
+                <h3 style="color: white; background: transparent; margin-left: 25px; font-size: 30px; border: none;">My_account</h3>
+        
+                <a href="#" class="different"><i class="fa fa-user-edit icon"></i> Change Status</a>
+                <a href="#" class="different"><i class="fa fa-user-edit" style="color:rgba(111, 154, 194, 0.541); float: left;"></i> Edit the profil photo</a>
+                <a href="#" class="different"><i class="fa fa-user-edit icon"></i> Edit your account</a>
+                <a href="#" class="different"> Show my information</a>
+                <a href="#" class="different"> Personal document</a> 
+                <a href="#" class="different"> Delete the account/Exit </a>
+                <a href="#" class="different"> Change Status</a>
+            </div>
+              
+            <img onclick="openNav()" src="images/user.png" alt="" style="float: left;">
+            
+            <h4 class="text-capitalize">ms @Jit connected</h4>
+            <form class="search" action="">
+                <input type="text" placeholder="Search" name="search" size="50">
+                <button type="submit">Search</button>
+            </form>
+        </nav>
+    </header>
+
+    <h2 class="text-capitalize"> Inmate Management</h2>
+<div class="row">
+    <div class="column">
+        <div class="box">
+            <div class="image">
+                <p>Image cap</p>
+            </div>
+            <div class="content">
+                <h3>New Prisoner Registration</h3>
+                <p>This part is only for new prisoners' registration, whatever its gender or its age. All registration will be done in that section</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <p>Image cap</p>
+            </div>
+            <div class="content">
+                <h3>Database Prisoners Public Folder </h3>
+                <p>This part lists all prisoners who have been in jail. In this part, we only have two sections inside that is male and female. We don't need to consider the age factor.
+                    <br> Every officer who has an account in the system can check out this part</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="column">
+        <div class="box">
+            <div class="image">
+                <p>Image cap</p>
+            </div>
+            <div class="content">
+                <h3>New Prisoners classification </h3>
+                <p>This part is about prisoners' classification it's about organization prisoners accordingers their genders and ages. That is if the prisoner is adult or not also man or female</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <p>Image cap</p>
+            </div>
+            <div class="content">
+                <h3>Database Prisoners Private Folder </h3>
+                <p>This part is about private cases, we only have two section inside that is male and female. We don't need to consider the age factor. Only officers with "admin" status can excess to this part.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-right" style="width:200px;right:0;" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+    
+    <img src="images/user.png" alt="">
+
+    <a href="#"  class="w3-bar-item w3-button"> Log out </a></li>
+    <a href="#"  class="w3-bar-item w3-button"> Appearance</a><input type="range" id="range" onchange="fun(this)"></li>
+    <a href="#"  class="w3-bar-item w3-button"> Luminosity </a><input type="range" id="range1" onchange="fun(this)"></li>
+    <a href="#"  class="w3-bar-item w3-button"> Downloads </a></li>
+    <a href="#"  class="w3-bar-item w3-button"> Notifications <i class="fa fa-bell"></i></a></li>
+    <a href="#"  class="w3-bar-item w3-button"> F.A.Q.  <i class="fa fa-info-circle"></i></a></li>
+    <a href="#"  class="w3-bar-item w3-button"> Contact us </a></li>
+    <a href="#"  class="w3-bar-item w3-button"> feedback </a> <i class="fa fa-envelope"></i> </li>
+    <a href="#"  class="w3-bar-item w3-button"> Update</a></li>
+    <a href="#"  class="w3-bar-item w3-button"> Version 1.9</a></li>
+    <a href="#"  class="w3-bar-item w3-button"> About us</a></li>
+    
+</div>
+
+b
+</div>    
+<footer>
+    <i class="fa fa-comments icon" style="float: left; color: white;"></i>
+    <i class="fa fa-home icon" style="color: rgba(255, 255, 255, 0.541);"></i>
+    <i class="fa fa-cog"  style="float: right; color: rgba(255, 255, 255, 0.541);" onclick="w3_open()"></i>
+</footer>
+  
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/account.js"></script>
+</body>
+</html>

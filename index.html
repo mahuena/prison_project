@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta class="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JIT App</title>
+
+    <!--link stylesheet and font awesome icon-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body">
+<!--Header starts-->
+<header>
+    <div class="logo">
+        <img src="images/logo.jpg" alt="">
+    </div>   
+</header>
+<!--Header ends-->
+    
+<!--Main starts-->
+<h1>Welcome to JIT</h1>
+
+<div class="outer">
+    <h2> Login</h2>
+    <div class="inner">
+        <form action="/action_page.php" method="post">
+            <div class="input">
+                <input type="text" placeholder="Officer_ID" class="box">
+                <input type="password" placeholder="Login_Password" class="box" id="myInput"><br>
+            </div>
+            
+            <div class="password">
+                <input type="checkbox" onclick="myFunction()">
+                <p> Show Password </p>
+            </div>
+
+            <button type="submit" class="login"><a href="Account.html"> Sign up </a></button>
+            
+            <div class="dropdown">
+                <i class="fa fa-user-cog" onclick="myFunction1()"></i>
+                
+                <div id="dropdown" class="content">
+                    <a href="createAccount.html">Create an account</a>
+                    <a href="#">Forgot Officer_ID</a>
+                    <a href="#">Forgot Password</a>
+                </div>
+            </div>   
+        </form>
+    </div>  
+</div>
+    
+<!--Main ends-->
+
+    
+<script>
+function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+
+function myFunction1() {
+    document.getElementById("dropdown").classList.toggle("show");
+  }
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.fa-user-cog')) {
+      var dropdowns = document.getElementById('dropdown');
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+}
+</script>
+
+</body>
+</html>

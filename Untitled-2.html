@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  background: #b6b5b5;
+  padding-left: 300px;
+}
+nav{
+background:#042e2e;
+width: 100%;
+height: 100px;
+border-bottom: 2px solid #111;
+}
+nav form{
+  height: 40px;
+  margin-right: 50px;
+  background: #fff;
+  min-width: 25%!important;
+  border-radius: .5ch;
+  float: right;
+  display: block;
+  margin-right: 40px; margin-top: 30px;
+}
+nav form .search-data{
+  width: 100%;
+  height: 100%;
+  padding: 0 15px;
+  color: #111;
+  font-size: 20px;
+  border: none;
+  background: none;
+  outline: none;
+}
+nav form button{
+  padding: 0 15px 0 5px;
+  font-size: 20px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  background: #fff;
+  min-width: 5%!important;
+  display: inline-block;
+}
+nav form button:hover{
+  background: #ddd;
+}
+nav .cancel-icon{
+    width: 30px;
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #808080;
+    cursor: pointer;
+    display: none;
+}
+nav .cancel-icon:hover{
+    color: #fff;
+}
+nav .search-icon{
+  width: 40px;
+  text-align: center;
+  margin: 0 50px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+nav .cancel-icon,
+nav .search-icon{
+  display: none;
+}
+.footer{
+background:#042e2e;
+width: 100%;
+height: 50px;
+border-top: 2px solid #111; 
+}
+    </style>
+</head>
+<body>
+    <nav>
+
+       <div class="search-icon" onclick="myFunction()">
+           <span class="fa fa-search"></span>
+       </div>
+        
+       <form action="#" id="form">
+           <input type="search" class="search-data" placeholder="Search" required>
+           <button type="submit" class="fa fa-search"></button>
+       </form>
+     </nav> 
+
+
+     <script>
+         const searchBtn = document.querySelector(".search-icon");
+         const cancelBtn = document.querySelector(".cancel-icon");
+         const form = document.querySelector("form");
+
+         cancelBtn.onclick = ()=>{
+           items.classList.remove("active");
+           cancelBtn.classList.remove("show");
+         }
+
+         searchBtn.onclick = ()=>{
+           form.classList.add("active");
+           cancelBtn.classList.add("show");
+           cancelBtn.style.color = "#ddd";
+           searchBtn.classList.add("hide");
+        }
+        
+     </script>
+</body>
+</html>
