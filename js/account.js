@@ -44,9 +44,7 @@ function openNav() {
          const form = document.querySelector("form");
          cancelBtn.onclick = ()=>{
            searchBtn.classList.remove("hide");
-           cancelBtn.classList.remove("show");
            form.classList.remove("active");
-           cancelBtn.style.color = "#";
          }
          searchBtn.onclick = ()=>{
            form.classList.add("active");

@@ -19,33 +19,30 @@
     <header>
     <nav>
         <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn"  onclick="closeNav()">&times;</a>
             
-            <h3 style="color: white; background: transparent; margin-left: 25px; font-size: 30px; border: none;">My_account</h3>
-    
-            <a href="#" class="different"><i class="fa fa-user-edit icon"></i> Change Status</a>
-            <a href="#" class="different"><i class="fa fa-user-edit" style="color:rgba(111, 154, 194, 0.541); float: left;"></i> Edit the profil photo</a>
-            <a href="#" class="different"><i class="fa fa-user-edit icon"></i> Edit your account</a>
-            <a href="#" class="different"> Show my information</a>
-            <a href="#" class="different"> Personal document</a> 
-            <a href="#" class="different"> Delete the account/Exit </a>
-            <a href="#" class="different"> Change Status</a>
+            <h3>My_account</h3>
+            <div class="content">
+            <a href="#"><i class="fa fa-user-edit icon"></i> Change Status</a>
+            <a href="#"><i class="fa fa-user-edit" style="color:rgba(111, 154, 194, 0.541); float: left;"></i> Edit the profil photo</a>
+            <a href="#"><i class="fa fa-user-edit icon"></i> Edit your account</a>
+            <a href="#"> Show my information</a>
+            <a href="#"> Personal document</a> 
+            <a href="#"> Delete the account/Exit </a>
+            <a href="#"> Change Status</a>
+        </div>
         </div>
           
         <img onclick="openNav()" src="images/user.png" alt="" style="float: left;">
         
-        <h4 class="text-capitalize">ms @Jit connected</h4>
+        <h4 class="text-capitalize">username</h4>
         
-        <div class="search-icon">
-            <span class="fa fa-search"></span>
-         </div>
-         <div class="cancel-icon">
-            <span class="fa fa-times"></span>
-         </div>
         <form action="#">
             <input type="search" class="search-data" placeholder="Search" required>
             <button type="submit" class="fa fa-search"></button>
         </form>
+
+        <i class="fa fa-bell bell" style="cursor: pointer;"></i>
     </nav>
 </header>
 
@@ -54,7 +51,11 @@
 
     <div id="mySidenav1" class="sidenav1">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
-        <div class="dropdown-content" style="margin-top: 60px;">
+        <form action="#">
+            <input type="search" class="search-data" placeholder="Search" required>
+            <button type="submit" class="fa fa-search"></button>
+        </form>
+        <div class="dropdown-content" style="margin-top: 30px;">
             <a href="prisoners_management.html">Prisoners_management</a>
             <a href="#">Sentence calculator</a>
             <a href="#">Staff_management</a>
@@ -62,7 +63,7 @@
             <a href="#">Others Services</a> 
         </div>
     </div>
-    <span class="openbtn" style="font-size:42px; cursor:pointer" onclick="openNav1()">&#9776;</span>
+    <span class="openbtn" onclick="openNav1()" style="cursor: pointer;">&#9776;</span>
     
   
 
@@ -97,9 +98,7 @@
 
 
     <footer>
-        <i class="fa fa-comments icon" style="float: left; color: white;"></i>
-        <i class="fa fa-home icon" style="color: rgba(255, 255, 255, 0.541);"></i>
-        <i class="fa fa-cog icon" style="float: right; color: rgba(255, 255, 255, 0.541);"></i>
+        
     </footer>
 </div>
 </body>

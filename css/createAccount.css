@@ -51,7 +51,7 @@ font-size: 25px;
 }
 .input-field{
     width: 69%;
-    padding: 15px;
+    padding: 12px;
     background: transparent;
     border: 1px solid #808080;
     border-radius: 0 .5ch .5ch 0;
@@ -61,7 +61,7 @@ font-size: 25px;
 }
 .input-field1 {
     width: 80%;
-    padding: 15px;
+    padding: 12px;
     background: transparent;
     border: 1px solid #808080;
     border-radius: .5ch;
