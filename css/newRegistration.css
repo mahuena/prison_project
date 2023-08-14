@@ -131,15 +131,87 @@ nav form.active{
   color: #fff;
   margin-bottom: 20px;
 }
+.box{
+  margin: auto;
+  width: 60%;
+}
+.heading {
+color: #fff;
+margin-top: 70px; margin-bottom: 0;
+text-align: left;
+border: 1px solid #111;
+background: #414040;
+padding: 10px 30px;
+width: max-content;
+border-radius: .3ch;
+}
+.content1 {
+  background: #fff;
+  border: 1px solid #111;
+  padding: 20px;
+  margin: auto;
+  width: 100%;
+  height: 380px;
+  border-radius: .5ch;
+}
+.content1 h3 {
+  padding: 15px 30px;
+  margin: auto; margin-top: 30px; margin-bottom: 60px;
+  text-align: center;
+  border: .5px solid #111;
+  cursor: pointer;
+  width: 80%;
+  border-radius: .3ch;
+}
+.content1 h3:hover {
+  opacity: .8;
+}
+.content1 .exit {
+  float: left;
+  margin-left: 40px;
+  padding: 0px 40px;
+  margin-top: 20px;
+  font-size: 20px;
+  border-radius: .3ch;
+  border: .5px solid #111;
+}
+.content1 .start {
+  float: right;
+  margin-right: 40px;
+  padding: 10px 25px;
+  margin-top: 20px;
+  font-size: 20px;
+  border-radius: .3ch;
+  padding: 0px 38px;
+  border: .5px solid #111;
+}
+
+
 
 @media (max-width: 980px){
   nav form{
     display: none;
   }
-  
-
   nav .bell {
     display: block;
+  }
+  .box {
+    width: 80%;
+    margin-top: 120px;
+  }
+  .content1 {
+    height: 400px;
+  }
+  .content1 h3{
+    padding: 25px 40px; 
+  }
+  .content1 .exit {
+    margin-top: 0;
+    padding: 5px 40px;
+  }
+  .content1 .start{
+    padding: 5px 36px;
+    margin-top: 0;
   }
 }
 
@@ -156,6 +228,20 @@ nav form.active{
     margin-top: 35px;
     font-size: 18px;
 } 
+.heading {
+  font-size: 15px;
+}
+.box {
+  width: 90%;
+  margin-top: 50px;
+}
+.content1 .exit, .content1 .start {
+  margin: auto; margin-left: 20px;
+}
+.content1 h3{
+  width: 90%;
+  margin-bottom: 40px;
+}
 }
 @media (max-width: 420px){
   nav img{
@@ -163,4 +249,35 @@ nav form.active{
     height: 50px;
     margin: 10px 10px 0 20px;
   }
+  h4{
+    margin-top: 30px;
+    font-size: 12px;
+}
+  .content1 h3{
+    padding: 20px 10px; 
+    font-size: 15px;
+    width: 95%;
+  }
+  .heading {
+    font-size: 15px;
+  }
+  .content1 .exit, .content1 .start {
+    float: right;
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  .content1 {
+    height: 335px;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 300px){
+.content1 {
+  height: 390px;
+  margin-bottom: 25px;
+}
+.content1 h3 {
+  width: 100%;
+  font-size: 15px;
+}
 }
