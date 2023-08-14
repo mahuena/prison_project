@@ -314,9 +314,12 @@ h2{
     border-radius: .5ch;
     margin: auto; margin-bottom: 40px;
     background-color: #fff;
-    cursor: pointer; 
 }
-.box:hover{
+.box a {
+  color: #111;
+  cursor: pointer; 
+}
+.box a:hover{
   opacity: .9;
 }
 .column{
@@ -351,43 +354,7 @@ footer{
   text-align: center;
 
 }
-#range{
-    width: 50px;
-    background: rgb(201, 201, 250);
-    height: 15px;
-    outline: none;
-    cursor: pointer;
-}
-#range::-webkit-slider-thumb {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    cursor: pointer;
-    background: rgb(136, 136, 219);
-}
-#range1{
-    width: 120px;
-    background: rgb(201, 201, 250);
-    height: 3px;
-    outline: none;
-    cursor: pointer;
-}
-#range1::-webkit-slider-thumb {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    cursor: pointer;
-    background: rgb(136, 136, 219);
-}
-#mySidebar img {
-    width: 5%;
-    height: 70px;
-    border-radius: 50%;
-    margin: auto;
-    object-fit: cover;
-    border: 1px solid #111;
-    align-items: center;
-}
+
 
 
 @media (max-width: 1100px){
