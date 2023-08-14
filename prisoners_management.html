@@ -17,33 +17,54 @@
     <header>
         <nav>
             <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="javascript:void(0)" class="closebtn"  onclick="closeNav()">&times;</a>
                 
-                <h3 style="color: white; background: transparent; margin-left: 25px; font-size: 30px; border: none;">My_account</h3>
-        
-                <a href="#" class="different"><i class="fa fa-user-edit icon"></i> Change Status</a>
-                <a href="#" class="different"><i class="fa fa-user-edit" style="color:rgba(111, 154, 194, 0.541); float: left;"></i> Edit the profil photo</a>
-                <a href="#" class="different"><i class="fa fa-user-edit icon"></i> Edit your account</a>
-                <a href="#" class="different"> Show my information</a>
-                <a href="#" class="different"> Personal document</a> 
-                <a href="#" class="different"> Delete the account/Exit </a>
-                <a href="#" class="different"> Change Status</a>
+                <h3>My_account</h3>
+                <div class="content">
+                <a href="#"> Change Status</a>
+                <a href="#"> Edit the profil photo</a>
+                <a href="#"> Edit your account</a>
+                <a href="#"> Show my information</a>
+                <a href="#"> Personal document</a> 
+                <a href="#"> Delete the account/Exit </a>
+                <a href="#"> Change Status</a>
+            </div>
             </div>
               
             <img onclick="openNav()" src="images/user.png" alt="" style="float: left;">
             
-            <h4 class="text-capitalize">ms @Jit connected</h4>
-            <form class="search" action="">
-                <input type="text" placeholder="Search" name="search" size="50">
-                <button type="submit">Search</button>
+            <h4 class="text-capitalize">username</h4>
+            
+            <form action="#">
+                <input type="search" class="search-data" placeholder="Search" required>
+                <button type="submit" class="fa fa-search"></button>
             </form>
+    
+            <i class="fa fa-bell bell" style="cursor: pointer;"></i>
         </nav>
     </header>
+    <a href="#" class="notification"><span>Notifications</span><span class="badge">4</span></a>
+
+    <div id="mySidenav1" class="sidenav1">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+        <form action="#">
+            <input type="search" class="search-data" placeholder="Search" required>
+            <button type="submit" class="fa fa-search"></button>
+        </form>
+        <div class="dropdown-content" style="margin-top: 30px;">
+            <a href="prisoners_management.html">Prisoners_management</a>
+            <a href="#">Sentence calculator</a>
+            <a href="#">Staff_management</a>
+            <a href="#">Cells_management</a>
+            <a href="#">Others Services</a> 
+        </div>
+    </div>
+    <span class="openbtn" onclick="openNav1()" style="cursor: pointer;">&#9776;</span>
 
     <h2 class="text-capitalize"> Inmate Management</h2>
 <div class="row">
     <div class="column">
-        <div class="box">
+        <a href="newRegistration"></a><div class="box">
             <div class="image">
                 <p>Image cap</p>
             </div>
@@ -51,7 +72,7 @@
                 <h3>New Prisoner Registration</h3>
                 <p>This part is only for new prisoners' registration, whatever its gender or its age. All registration will be done in that section</p>
             </div>
-        </div>
+        </div></a>
 
         <div class="box">
             <div class="image">
@@ -112,15 +133,12 @@
 b
 </div>    
 <footer>
-    <i class="fa fa-comments icon" style="float: left; color: white;"></i>
-    <i class="fa fa-home icon" style="color: rgba(255, 255, 255, 0.541);"></i>
-    <i class="fa fa-cog"  style="float: right; color: rgba(255, 255, 255, 0.541);" onclick="w3_open()"></i>
+    
 </footer>
   
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="js/settings.js"></script>
 <script src="js/account.js"></script>
 </body>
 </html>

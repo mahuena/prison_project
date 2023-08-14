@@ -20,14 +20,13 @@ nav{
     cursor: pointer;
     float: left;
 }
-
 img:hover{
     opacity: 0.7;
 }
 h4{
     color: #111;
     background: #fff;
-    border-radius: 1ch;
+    border-radius: .5ch;
     font-size: 20px;
     border: 1px solid #111;
     width: auto;
@@ -87,7 +86,6 @@ nav form.active{
     pointer-events: auto;
   }
 .sidenav1 form{
-    display: flex;
     margin-top: 50px; margin: auto;
     width: 90%;
     height: 35px;
@@ -95,7 +93,7 @@ nav form.active{
     background: #fff;
     min-width: 18%!important;
     border-radius: .5ch;
-  
+    display: none;
   }
 .sidenav1 form .search-data{
     width: 100%;
@@ -352,6 +350,9 @@ footer{
   nav span{
     display: block;
   }
+  .sidenav1 form{
+    display: flex;
+  }
   .notification {
     display: none;
   }
@@ -374,7 +375,7 @@ footer{
   }
   h4{
     margin-top: 35px;
-    font-size: 15px;
+    font-size: 18px;
 } 
 }
 @media (max-width: 420px){
