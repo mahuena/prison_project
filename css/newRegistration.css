@@ -166,9 +166,7 @@ border-radius: .3ch;
 .content1 h3:hover {
   opacity: .8;
 }
-.content a{
-  text-decoration: none;
-}
+
 
 .content1 .exit {
   float: left;
