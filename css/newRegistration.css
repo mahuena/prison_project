@@ -166,6 +166,10 @@ border-radius: .3ch;
 .content1 h3:hover {
   opacity: .8;
 }
+.content a{
+  text-decoration: none;
+}
+
 .content1 .exit {
   float: left;
   margin-left: 40px;
@@ -188,6 +192,7 @@ border-radius: .3ch;
 
 
 
+
 @media (max-width: 980px){
   nav form{
     display: none;
@@ -201,6 +206,7 @@ border-radius: .3ch;
   }
   .content1 {
     height: 400px;
+    margin-bottom: 25px;
   }
   .content1 h3{
     padding: 25px 40px; 
@@ -228,6 +234,9 @@ border-radius: .3ch;
     margin-top: 35px;
     font-size: 18px;
 } 
+.content {
+  margin-bottom: 25px;
+}
 .heading {
   font-size: 15px;
 }

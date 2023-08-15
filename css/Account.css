@@ -377,6 +377,10 @@ footer{
     margin-top: 35px;
     font-size: 18px;
 } 
+.prev, .next{
+  width: 13px;
+  height: 23px;
+}
 }
 @media (max-width: 420px){
   nav img{
