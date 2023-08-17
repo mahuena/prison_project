@@ -8,7 +8,6 @@
     <!--link stylesheet and font awesome icon-->
     <link rel="stylesheet" href="css/createAccount.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
 </head>
 
 <body>
@@ -53,8 +52,11 @@
 
                 <label class="required">City</label>
                 <div class="input-container">
-                    <select name="selection" class="input-field1">
-                        <option value="city" selected="selected">Choose</option>
+                    <select name="selection">
+                        <option value="0">Choose</option>
+                        <option value="1">Tema</option>
+                        <option value="2">Kumasi</option>
+                        <option value="3">Accra</option>
                     </select>
                 </div>
 
@@ -109,13 +111,11 @@
             </div>
 
             <div style="margin-top: 40px;">
-            <input type="checkbox" id="agreement" required style="margin-left: 50px;"> <label for="agreement">Agree to <a href="#">term and conditions</a></label>
+                <input type="checkbox" id="agreement" required style="margin-left: 50px;"> <label for="agreement">Agree to <a href="#">term and conditions</a></label>
             </div>
             <button type="submit" class="login"> Submit form </button>
         </div>
     </form>
-
-
 </div>
 
 

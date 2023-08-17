@@ -1,3 +1,6 @@
+*{
+    text-decoration: none;
+  }
 body{
     background: #042e2e;
 }
@@ -40,14 +43,14 @@ body{
     display: flex;
 }
 .icon {
-padding: 15px 10px 5px;
-background: #fff;
-min-width: 25px;
-text-align: center;
-vertical-align: auto;
-color: #111;
-border-radius: .5ch 0 0 .5ch;
-font-size: 18px;
+    padding: 15px 10px 5px;
+    background: #fff;
+    min-width: 25px;
+    text-align: center;
+    vertical-align: auto;
+    color: #111;
+    border-radius: .5ch 0 0 .5ch;
+    font-size: 18px;
 }
 .input-field{
     width: 69%;
@@ -72,6 +75,18 @@ font-size: 18px;
 #dif::placeholder{
     color: #111;
 }
+select {
+    color: #111;
+    padding: 12px;
+    border-radius: .5ch;
+    cursor: pointer;
+    user-select: none;
+    font-size: 20px;
+    border: 1px solid #808080;
+    background-color: transparent;
+    width: 88%;
+    outline: none;
+}
 .box-container p{
     font-size: 18px;
     color: #fff;
@@ -84,12 +99,10 @@ font-size: 18px;
     padding: 0 10px;
     width: 30%;
     height: 14rem;
-    border-radius: 1.5ch;
+    border-radius: .8ch;
 }
-
 .pass .input-field{
     padding: 10px;
-    border-radius: 0 .5ch .5ch 0;
     width: 55%;
     background: #fff;
     border-radius: 0 .5ch .5ch 0;
@@ -128,9 +141,9 @@ padding: 10px;
 }
 input[type=checkbox]{
     height: 13px;
-   width: 13px;
+    width: 13px;
 }
- .password p{
+.password p{
     display: inline-block;
     font-size: 15px;
     color: #111;
@@ -159,54 +172,57 @@ label[for="agreement"] a{
     font-size: 18px;
     top: 45px;
 }
- .login:hover {
+.login:hover {
     opacity: 0.9;
-  }
+}
  
 
 
 
-  @media (max-width:1100px){
-    .container{
-        height: 75rem;
-    }
-    .column{
-        width: 31%;
-        height: 38rem;
-    }
-    .container .box-container .column label{
-        font-size: 28px;
-        margin-left: 40px; margin-top: 30px; margin-bottom: 20px;
-    }
-    
-    } 
- 
+@media (max-width:1100px){
+.container{
+    height: 75rem;
+}
+.column{
+    width: 31%;
+    height: 38rem;
+}
+.container .box-container .column label{
+    font-size: 28px;
+    margin-left: 40px; margin-top: 30px; margin-bottom: 20px;
+}
+} 
+
 @media(max-width:990px){
-    .container {
-        height: 240rem;
-    }.container p{
-    font-size: 25px;
-    }
-    .column{
-        width: 100%;
-        height: 57rem;
-    }
-    .container .box-container .column label{
-        font-size: 35px;
-        margin-top: 55px; margin-bottom: 25px;
-    }
-    .input-field{
-        font-size: 35px;
-        width: 69%;
-        padding: 30px;
- }
- .icon {
+.container {
+    height: 240rem;
+}.container p{
+font-size: 25px;
+}
+.column{
+    width: 100%;
+    height: 60rem;
+}
+.container .box-container .column label{
+    font-size: 40px;
+    margin-top: 55px; margin-bottom: 25px;
+}
+.input-field{
+    font-size: 35px;
+    width: 69%;
+    padding: 30px;
+}
+.icon {
     padding: 30px 30px 15px;
     font-size: 35px;
- }
- .input-field1{
+}
+.input-field1{
     padding: 30px;
     font-size: 35px;
+}
+select {
+    padding: 30px;
+    font-size: 40px; 
 }
 .pass {
     width: 80%;
@@ -226,15 +242,15 @@ label[for="agreement"] a{
     padding: 30px;
 }
 .pass .input-field1{
-width: 72%;
-padding: 30px;
-font-size: 35px;
+    width: 72%;
+    padding: 30px;
+    font-size: 35px;
 }
 input[type=checkbox]{
     height: 20px;
-   width: 20px;
+    width: 20px;
 }
- .password p{
+.password p{
     font-size: 20px;
 }
 label[for="agreement"]{
@@ -248,7 +264,7 @@ label[for="agreement"] a{
     margin: 150px 50px;
     font-size: 35px;
 }
- }
+}
  
 
 

@@ -322,10 +322,15 @@ h2{
 .box a:hover{
   opacity: .9;
 }
+.row {
+  margin-bottom: 50px; 
+  height: 700px;
+}
 .column{
    float: left;
    margin: 40px; margin-left: 160px;
     width: 30%;
+    z-index: 0;
 }
 
 .image{
@@ -349,7 +354,8 @@ footer{
   height: 70px;
   width: 100%;
   border-top: 2px solid #111;  
-  bottom: 0;
+  margin-bottom: 0;
+  margin-left: 0;
 }
 
 
@@ -398,6 +404,9 @@ h2 {
         align-items: center;
         width: 450px;
     }
+    .row {
+      height: 1510px;
+    }
 }
 @media (max-width: 600px){
   .openbtn {
@@ -419,6 +428,9 @@ h2 {
     margin-top: 35px;
     font-size: 18px;
 } 
+.row {
+  height: 1520px;
+}
 }
 @media (max-width: 420px){
   nav img{
@@ -444,6 +456,9 @@ h2 {
   .box{
       width: 300px;
   }
+  .row {
+    height: 1550px;
+  }
 }
 @media (max-width: 300px){
   .column{
@@ -457,4 +472,7 @@ h2 {
   margin-top: 40px;
   font-size: 15px;
  }
+ .row {
+  height: 1600px;
+}
 }

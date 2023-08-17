@@ -1,6 +1,11 @@
+*{
+  font-family: verdana, sans-serif;
+  text-decoration: none;
+  box-sizing: border-box; 
+}
 body{
-    background: #808080;
-      margin: 0px;
+  background: #808080;
+  margin: 0px;
 }
 nav{
   background:#042e2e;

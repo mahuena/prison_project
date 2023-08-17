@@ -1,16 +1,10 @@
 *{
-    font-family: verdana, sans-serif;
-    margin: 0;
     text-decoration: none;
-    border: #fff;
-    text-transform: capitalize;
-    box-sizing: border-box;
+    box-sizing: border-box;   
 }
-
 body{
     background: #b6b5b5;
     overflow-x: hidden;
-    padding: 0;
 }
 
 .logo img{
@@ -18,10 +12,8 @@ body{
     margin-top: 30px; margin-left: 30px;
     border-radius: 50%;
 }
-
 h1{
     text-align: center;
-    justify-content: center;
     font-weight: normal;
     text-transform: uppercase;
     color: #373837;
@@ -30,8 +22,8 @@ h1{
 }
 .outer{
     background: rgb(23, 126, 223);
-    border-radius: 1.5ch;
-    width: 58%; 
+    border-radius: .5ch;
+    width: 50%; 
     position: relative;
     height: 470px;
     display: flex;
@@ -49,7 +41,7 @@ h1{
     width:98%;
     position: absolute; 
     background: #fff;
-    border-radius: 1.5ch;
+    border-radius: .5ch;
     top: 90px;
     height: 370px;
   }
@@ -73,13 +65,11 @@ h1{
 input[type=text], input[type=password] {
     width: 80%;
     padding: 15px 20px;
-    margin: 30px;
-    margin-top: 40px;
-    margin-bottom: 15px;
+    margin:  40px 30px 15px 30px;
     border: 2px solid #eee;
     background: transparent;
-    border-radius: 1ch;
-    color: #808080;
+    border-radius: .5ch;
+    color: #111;
     outline: none;
     font-size: 18px;
 }
@@ -96,7 +86,7 @@ input[type=text], input[type=password] {
     cursor: pointer;
     margin-top:30px; margin-left: 100px;
     font-size: 17px;
-    border-radius: .7ch;
+    border-radius: .5ch;
   }
 .login:hover {
     opacity: 0.9;
@@ -104,11 +94,9 @@ input[type=text], input[type=password] {
 
 .fa-user-cog {
     color:#353434;
-
     font-size: 25px;
     cursor: pointer;
-    margin-right: 30px;
-    margin-top: 30px;
+    margin-right: 30px; margin-top: 30px;
     padding: 10px;
 }
 .fa-user-cog:hover, .fa-user-cog:focus {
@@ -117,7 +105,7 @@ input[type=text], input[type=password] {
 .dropdown {
     position: relative;
     float: right;
-  }
+}
 .content{
     background: #fff;
     overflow-y: none;
@@ -145,8 +133,7 @@ input[type=text], input[type=password] {
 
 @media (max-width:1300px){
 .logo img{
-    margin-top: 50px;
-    margin-left: 60px;
+    margin-top: 50px; margin-left: 60px;
     width: 7%;
 }
 h1{
@@ -193,121 +180,117 @@ input[type=text], input[type=password]{
 }
 
 @media (max-width:990px){
-    .logo img{
-        margin-top: 70px;
-        margin-left: 70px;
-        width: 10%;
-    }
-    h1{
-        font-size: 60px;
-        margin-top: 40px;
-        font-weight: bold;
-    }
-    .outer h2{
-        font-size: 55px;
-        margin-bottom: 30px;
-    }
-    .outer{
-        width: 95%;
-        height: 1080px;
-        margin-top: 70px;
-    }
-    .inner{
-        top: 140px;
-        height: 920px;
-    }
-    input[type=text], input[type=password]{
-        padding: 55px 30px;
-        font-size: 35px;
-        margin-top: 80px;
-    }
-    .password p{
-        margin-top: 30px;
-        font-size: 30px;
-    }
-    input[type=checkbox]{
-        height: 30px;
-       width: 30px;
-    }
-    .login {
-        padding: 30px 35px;
-        font-size: 30px;
-        margin-left: 100px;
-        margin-top: 100px;
-    }
-    .fa-user-cog{
-        font-size: 70px;
-        margin-top: 100px;
-    }
-    .content{
-        min-width: 370px;
-        margin-left: -300px;
-    }
-    .content a{
-        font-size: 35px;
-        padding: 20px 18px;
-    }
-    }
+.logo img{
+    margin-top: 70px; margin-left: 70px;
+    width: 10%;
+}
+h1{
+    font-size: 60px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+.outer h2{
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+.outer{
+    width: 95%;
+    height: 1080px;
+    margin-top: 70px;
+}
+.inner{
+    top: 140px;
+    height: 920px;
+}
+input[type=text], input[type=password]{
+    padding: 55px 30px;
+    font-size: 35px;
+    margin-top: 80px;
+}
+.password p{
+    margin-top: 30px;
+    font-size: 30px;
+}
+input[type=checkbox]{
+    height: 30px;
+    width: 30px;
+}
+.login {
+    padding: 30px 35px;
+    font-size: 30px;
+    margin-left: 100px; margin-top: 100px;
+}
+.fa-user-cog{
+    font-size: 70px;
+    margin-top: 100px;
+}
+.content{
+    min-width: 370px;
+    margin-left: -300px;
+}
+.content a{
+    font-size: 35px;
+    padding: 20px 18px;
+}
+}
 
 @media (max-width:768px){
-    .logo img{
-        margin-top: 70px;
-        margin-left: 40px;
-        width: 15%;
-    }
-    h1{
-        font-size: 55px;
-        margin-top: 45px;
-    }
-    .outer h2{
-        font-size: 55px;
-        margin-bottom: 30px;
-    }
-    .outer{
-        width: 99%;
-        height: 1350px;
-        margin-top: 150px;
-    }
-    .inner{
-        height: 1250px;
-    }
-    input[type=text], input[type=password]{
-        padding: 60px 30px;
-        font-size: 45px;
-        margin-top: 1O0px;
-    }
-    .password p{
-        margin-top: 30px;
-        font-size: 40px;
-    }
-    input[type=checkbox]{
-       height: 30px;
-       width: 30px;
-    }
-    .login {
-        padding: 30px 35px;
-        font-size: 45px;
-        margin-left: 70px;
-        margin-top: 120px;
-    }
-    .fa-user-cog{
-        font-size: 70px;
-        margin-top: 60px;
-    }
-    .content{
-        min-width:400px;
-        margin-left: -150px;
-    }
-    .content a{
-        font-size: 45px;
-        padding: 20px 18px;
-    }
+.logo img{
+    margin-top: 70px; margin-left: 40px;
+    width: 15%;
+}
+h1{
+    font-size: 55px;
+    margin-top: 45px;
+}
+.outer h2{
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+.outer{
+    width: 99%;
+    height: 1350px;
+    margin-top: 150px;
+}
+.inner{
+    height: 1250px;
+}
+input[type=text], input[type=password]{
+    padding: 60px 30px;
+    font-size: 45px;
+    margin-top: 1O0px;
+}
+.password p{
+    margin-top: 30px;
+    font-size: 40px;
+}
+input[type=checkbox]{
+    height: 30px;
+    width: 30px;
+}
+.login {
+    padding: 30px 35px;
+    font-size: 45px;
+    margin-left: 70px; margin-top: 120px;
+}
+.fa-user-cog{
+    font-size: 70px;
+    margin-top: 60px;
+}
+.content{
+    min-width:400px;
+    margin-left: -150px;
+}
+.content a{
+    font-size: 45px;
+    padding: 20px 18px;
+}
 }
 
 @media(max-width:400px){
-    input[type=text], input[type=password]{
-        padding: 75px 30px;
-        font-size: 45px;
-        margin-top: 1O0px;
-    }
+input[type=text], input[type=password]{
+    padding: 75px 30px;
+    font-size: 45px;
+    margin-top: 1O0px;
+}
 }
