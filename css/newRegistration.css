@@ -1,6 +1,9 @@
+*{
+  text-decoration: none; 
+}
 body{
-    background: #808080;
-      margin: 0px;
+  background: #808080;
+  margin: 0px;
 }
 nav{
   background:#042e2e;
@@ -20,7 +23,6 @@ nav img{
   display: inline-flex;
   float: left;
 }
-
 img:hover{
   opacity: 0.7;
 }
@@ -61,13 +63,10 @@ h4{
   transition: 0.3s;
   text-align: left;
   margin-top: 15px;
-
 }
-
 .sidenav .content a:hover {
   background:rgba(255, 255, 255, 0.541);
 }
-
 .sidenav .closebtn {
   position: absolute;
   top: 0;
@@ -112,8 +111,6 @@ border-radius: .3ch;
 .content1 h3:hover {
   opacity: .8;
 }
-
-
 .content1 .exit {
   float: left;
   margin-left: 40px;
@@ -141,7 +138,6 @@ footer{
   margin: auto; margin-bottom: 0;
   bottom: 0;
   text-align: center;
-
 }
 
 
@@ -179,29 +175,35 @@ footer{
   }
   h4{
     margin-top: 35px;
-    font-size: 18px;
-} 
+    font-size: 20px;
+  } 
 .content {
   margin-bottom: 25px;
-}
+  }
 .heading {
   font-size: 15px;
-}
+  }
 .box {
   width: 90%;
   margin-top: 50px;
-}
+  }
 .content1 {
   width: 91%;
   margin-bottom: 60px;
-}
+  }
 .content1 .exit, .content1 .start {
   margin: auto; margin-left: 20px;
-}
+  }
 .content1 h3{
   width: 80%;
   margin-bottom: 40px;
-}
+  }
+.sidenav .content a{
+  font-size:18px ;
+  }
+.sidenav h3 {
+  font-size: 25px;
+  }
 }
 @media (max-width: 420px){
   nav img{
@@ -212,7 +214,7 @@ footer{
   h4{
     margin-top: 30px;
     font-size: 12px;
-}
+  }
   .content1 h3{
     padding: 20px 10px; 
     font-size: 15px;
@@ -233,14 +235,14 @@ footer{
   }
 }
 @media (max-width: 300px){
-.content1 {
-  height: 390px;
-  width: 82%;
-}
-.content1 h3 {
-  width: 100%;
-  font-size: 15px;
-}
+  .content1 {
+    height: 390px;
+    width: 82%;
+  }
+  .content1 h3 {
+    width: 100%;
+    font-size: 15px;
+  }
 }
 
 

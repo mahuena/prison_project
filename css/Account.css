@@ -180,7 +180,7 @@ nav form.active{
   display: none;
   background: #fff;
   min-width: 160px;
-  margin-left: 10px;
+  margin-left: 20px;
   margin-top: 10px;
 } 
 #dropdown-content a {
@@ -219,7 +219,7 @@ nav form.active{
   display: block;
   transition: 0.3s;
   text-align: left;
-  margin-top: 15px;
+  margin-top: 15px; margin-left: 20px;
 }  
 .sidenav .content a:hover {
   background:rgba(255, 255, 255, 0.541);
@@ -253,7 +253,7 @@ nav form.active{
   display: block;
   transition: 0.3s;
   text-align: left;
-  margin-top: 15px;
+  margin-top: 15px; margin-left: 20px;
 } 
 .sidenav1 .dropdown-content a:hover {
   background:rgba(255, 255, 255, 0.541);
@@ -280,8 +280,8 @@ footer{
 .slider{
   max-width: 1000px;
   position: relative;
-  margin: auto; margin-top: 50px; margin-bottom: 50px;
-  height: 550px;
+  margin: auto; margin-top: 60px; 
+  height: 450px;
 }
 .mySlides{
   display: none;
@@ -293,7 +293,7 @@ footer{
   width: 20px;
   height: 30px;
   top: 40%;
-    margin: auto;
+  margin: auto;
   font-weight: bolder;
   font-size: 30px;
   color: #042e2e;
@@ -309,9 +309,25 @@ footer{
   border-radius: 3px 0 0 3px;
 }
 .prev:hover, .next:hover{
-  opacity: 0.9;
+  color: #fff;
 }
-
+.bar{
+  cursor: pointer;
+  height: 5px;
+  width: 20px;
+  margin: 4px 2px 20px 4px;
+  background-color:#717171;
+  display: inline-block;
+  transition: #042e2e 0.6s ease;
+}
+.fade{
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity:.4;}
+  to {opacity: 1;}
+}
 
 
 @media (max-width: 980px){
@@ -346,17 +362,22 @@ footer{
   }
   h4{
     margin-top: 35px;
-    font-size: 18px;
+    font-size: 20px;
 } 
 .prev, .next{
-  width: 13px;
-  height: 18px;
+  font-size: 25px;
 }
 .prev {
   left: 15px;
 }
 .next {
   right: 15px;
+}
+.sidenav .content a, .sidenav1 .dropdown-content a, .sidenav1 form .search-data {
+  font-size:18px ;
+}
+.sidenav h3 {
+  font-size: 25px;
 }
 }
 @media (max-width: 420px){
@@ -367,14 +388,13 @@ footer{
   }
   h4{
     margin-top: 30px;
-    font-size: 12px;
+    font-size: 15px;
 } 
 .openbtn {
   left: 15px;
   font-size:28px; 
 }
 .prev, .next{
-  width: 10px;
-  height: 8px;
+  font-size: 18px;
 }
 }
