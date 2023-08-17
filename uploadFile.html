@@ -6,10 +6,7 @@
 
     <title>Declaration file</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+    <script src="https://cdn.tiny.cloud/1/3befkr8fe1yk4pgzb0q691iybrod9hovskd1wi8apb23en2y/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
     <!--Link style sheet-->
     <link rel="stylesheet" href="css/uploadFile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -36,25 +33,20 @@
         <img onclick="openNav()" src="images/user.png" alt="" style="float: left;">
         
         <h4 class="text-capitalize">username</h4>
-        
-        <form action="#">
-            <input type="search" class="search-data" placeholder="Search" required>
-            <button type="submit" class="fa fa-search"></button>
-        </form>
-
-        <i class="fa fa-bell bell" style="cursor: pointer;"></i>
     </nav>
 </header>
 
 <div class="box">
     <h3 class="heading">Declaration File</h3>
     
-    <div class="content1">
-            <form action="" style="text-align: center;">
-                <input type="file" id="myFile" onchange="loadFile(event)">
-                <label id="file-label" for="myFile">Upload a File</label>
+    <div class="content1" id="content1">
+            <form action="">
+                <div class="files" style="width: 100%; text-align: center;">
+                    <input type="file" placeholder="Upload a file" id="myFile">
+                </div>
 
-                <input type="text" placeholder="Write a File text" id="file-text">
+                <h2>Write a file text</h2>
+                <textarea id="default-editor" placeholder="Write here"></textarea>
             </form>
 
     
@@ -67,12 +59,12 @@
         <div class="footer"></div>
     </footer>
 
-    <script>
-        var loadFile = function(event) {
-            var image = document.getElementById("myfile");
-            image.src=URL.createObjectURL(event.target.files[0]);
-        };
-    <script/>
+<script>
+    tinymce.init({
+    selector: 'textarea#default-editor'
+    });
+</script>
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/account.js"></script>
 </body>
